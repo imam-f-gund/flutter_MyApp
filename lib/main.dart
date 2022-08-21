@@ -55,21 +55,21 @@ class _MyAppState extends State<MyApp> {
           border: Border(top: BorderSide(color: Colors.blueGrey, width: 5))),
       tabs: <Widget>[
         SizedBox(
-          height: 30,
+          height: 40,
           child: Tab(
             icon: Icon(Icons.comment),
             text: "Tab 1",
           ),
         ),
         SizedBox(
-          height: 30,
+          height: 40,
           child: Tab(
             icon: Icon(Icons.computer),
             text: "Tab 2",
           ),
         ),
         SizedBox(
-          height: 30,
+          height: 40,
           child: Tab(
             text: "Tab 3",
           ),
