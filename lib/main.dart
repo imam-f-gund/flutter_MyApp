@@ -55,21 +55,21 @@ class _MyAppState extends State<MyApp> {
           border: Border(top: BorderSide(color: Colors.blueGrey, width: 5))),
       tabs: <Widget>[
         SizedBox(
-          height: 40,
+          height: 50,
           child: Tab(
             icon: Icon(Icons.comment),
             text: "Tab 1",
           ),
         ),
         SizedBox(
-          height: 40,
+          height: 50,
           child: Tab(
             icon: Icon(Icons.computer),
             text: "Tab 2",
           ),
         ),
         SizedBox(
-          height: 40,
+          height: 50,
           child: Tab(
             text: "Tab 3",
           ),
@@ -214,10 +214,9 @@ class _MyAppState extends State<MyApp> {
                                       color: Color.fromARGB(79, 12, 228, 247),
                                       child: FittedBox(
                                         fit: BoxFit.fill,
-                                        child: Image.asset(
-                                            'assets/images/icon.png',
-                                            height: 500,
-                                            fit: BoxFit.fill),
+                                        child: Image(
+                                            image:
+                                                AssetImage("/images/icon.jpg")),
                                       ),
                                       height: 150,
                                       width: 150,
@@ -278,10 +277,9 @@ class _MyAppState extends State<MyApp> {
                                       color: Color.fromARGB(79, 12, 228, 247),
                                       child: FittedBox(
                                         fit: BoxFit.fill,
-                                        child: Image.asset(
-                                            'assets/images/asas.png',
-                                            height: 500,
-                                            fit: BoxFit.fill),
+                                        child: Image(
+                                            image:
+                                                AssetImage("/images/asas.png")),
                                       ),
                                       height: 150,
                                       width: 150,
