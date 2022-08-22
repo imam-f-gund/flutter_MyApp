@@ -1,13 +1,13 @@
 // @dart=2.9
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'ui/pages/images.dart';
 import 'ui/pages/main_page.dart';
 import 'ui/wigets/moviebox.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(new MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -181,13 +181,13 @@ class _MyAppState extends State<MyApp> {
                                     Container(
                                       color: Color.fromARGB(79, 12, 228, 247),
                                       child: FittedBox(
-                                          fit: BoxFit.fill,
-                                          child: Image(
-                                              image: CachedNetworkImageProvider(
-                                                  "https://static.dw.com/image/61514146_605.jpg"))
-                                          // Image.network(
-                                          // 'https://static.dw.com/image/61514146_605.jpg'),
-                                          ),
+                                        fit: BoxFit.fill,
+                                        child: Image(
+                                            image: CachedNetworkImageProvider(
+                                                "https://static.dw.com/image/61514146_605.jpg")),
+                                        // Image.network(
+                                        // 'https://static.dw.com/image/61514146_605.jpg'),
+                                      ),
                                       height: 150,
                                       width: 150,
                                     ),
@@ -202,27 +202,14 @@ class _MyAppState extends State<MyApp> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => MainPage(
-                                                title: 'title2',
-                                                desc: 'desc2',
-                                              )));
+                                          builder: (context) => MyImage()));
                                 },
-                                child: Column(
-                                  // mainAxisSize: MainAxisSize.min,
-                                  children: <Widget>[
-                                    Container(
-                                      color: Color.fromARGB(79, 12, 228, 247),
-                                      child: FittedBox(
-                                        fit: BoxFit.fill,
-                                        child: Image(
-                                            image:
-                                                AssetImage("/images/icon.jpg")),
-                                      ),
-                                      height: 150,
-                                      width: 150,
-                                    ),
-                                    Text('Title 2'),
-                                  ],
+                                child: Container(
+                                  width: 200,
+                                  height: 200,
+                                  padding: EdgeInsets.all(3),
+                                  child: Image(
+                                      image: AssetImage("images/icon.jpg")),
                                 ),
                               ),
                             ),
@@ -279,7 +266,7 @@ class _MyAppState extends State<MyApp> {
                                         fit: BoxFit.fill,
                                         child: Image(
                                             image:
-                                                AssetImage("/images/asas.png")),
+                                                AssetImage("images/icon.jpg")),
                                       ),
                                       height: 150,
                                       width: 150,
